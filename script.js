@@ -12,7 +12,7 @@ function getQuestions() {
       displayQuestion();
     },
     error: function() {
-      alert('no se imprimen las preguntas');
+      alert('No se pueden obtener las preguntas.');
     }
   });
 }
@@ -58,13 +58,14 @@ function displayQuestion() {
   }
 }
 
-
 function submitTrivia() {
   var selectedAnswer = $('input[name="answer"]:checked').val();
   if (selectedAnswer) {
     var question = questions[currentQuestionIndex];
     if (selectedAnswer === question.correct_answer) {
-      score++;
+      score += 5; // Suma 5 puntos por pregunta correcta
+    } else {
+      score -= 3; // Resta 3 puntos por pregunta incorrecta
     }
 
     currentQuestionIndex++;
@@ -120,7 +121,7 @@ function getLeaderboard() {
       displayLeaderboard(response);
     },
     error: function() {
-      alert('Error occurred while retrieving the leaderboard.');
+      alert('Error al obtener la tabla de líderes.');
     }
   });
 }
@@ -146,7 +147,6 @@ function displayLeaderboard(data) {
 function redirectToTrivia() {
   window.location.href = 'trivia.html'; // Reemplaza 'trivia.html' con la URL o nombre del archivo de la página de la trivia
 }
-
 
 getQuestions();
 getLeaderboard();
