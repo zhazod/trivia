@@ -1,0 +1,141 @@
+body{
+  background: linear-gradient(to bottom, #3366cc 0%, #b3c7e6 70%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Estilo para el título de la trivia */
+h2 {
+  margin: 20%;
+  text-align: center;
+}
+#img{
+  margin-top: 10px;
+  display: block;
+  margin: 0;
+  max-width: 0 auto;
+  text-align: center;
+}
+/* Estilo para el contenedor de la pregunta */
+
+#questionContainer {
+  margin-top: 50px;
+  text-align: center;
+  border: 2px solid #3366cc;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 600px; /* Establece un ancho máximo */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6ea2dd;
+}
+
+
+/* Estilo para la pregunta */
+#questionContainer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las opciones de respuesta */
+#questionContainer div {
+  text-align: left;
+}
+
+#questionContainer input[type="radio"] {
+  margin-right: 10px;
+}
+
+#questionContainer label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+/* Estilo para los botones */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#btnE{
+  background-color: #3366cc;
+  color: white;
+}
+
+.button-container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #225588;
+}
+
+.btn-secondary {
+  background-color: #eee;
+  color: #333;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #ccc;
+}
+
+#leaderboard {
+  margin-top: 50px;
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#leaderboard th,
+#leaderboard td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#leaderboard th {
+  background-color: #3366cc;
+  color: #fff;
+}
+
+#leaderboard tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#leaderboard tr:hover {
+  background-color: #ddd;
+}
+
+/* Estilo para el rango */
+#leaderboard td:first-child {
+  font-weight: bold;
+}
+
+/* Estilo para el nombre */
+#leaderboard td:nth-child(2) {
+  color: #3366cc;
+}
+
+/* Estilo para el puntaje */
+#leaderboard td:nth-child(3) {
+  font-weight: bold;
+  color: #ff9900;
+}

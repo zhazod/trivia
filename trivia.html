@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trivia</title>
+  <script src="jquery.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="css.css">
+
+</head>
+<body>
+  <br>
+    <h2>Trivia</h2>
+  <div class="container">
+    <div id="questionContainer"></div>
+
+    <div class="button-container">
+      <button id="btnE" type="button" class="btn btn-outline-primary" onclick="submitTrivia()">Enviar</button>
+    </div>
+
+    <table id="leaderboard">
+      <tr>
+        <th>Rango</th>
+        <th>Nombre</th>
+        <th>Puntaje</th>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <div id="modalContainer"></div>
+
+  <div class="button-container2">
+    <div class="button-group">
+      <button onclick="redirectToTrivia()" class="btn btn-primary">Volver a resolver Trivia</button>
+      <button onclick="redirectToHomepage()" class="btn btn-secondary">Volver a la página</button>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- <style>
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+</style> -->
